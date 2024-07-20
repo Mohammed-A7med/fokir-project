@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+#loding{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 222222;
+}
+/* ====================== loding screen ======================*/
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #dfc;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+/* ====================== section home ====================== */
+
+#home .bg-img {
+    background-image: url(../image/slider-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#btnUp{
+    bottom: 30px;
+    right: 20px;
+    z-index: 111;
+    display: none;
+}
+
+/* =========== navbar =========== */
+.bg-img .navbar-brand,.navbar ul a:hover {
+    color: #FF305B !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home .navbar-expand-lg .logo {
+    font-size: 24px;
+    font-weight: 600;
+   
+}
+#nav-main{
+    transition: background-color 1s  ;
+}
+
+.bg-main{
+    background-color: #FF305B !important;
+}
+.bg-img .navbar ul a {
+    color: #fff;
+    transition: all .5s;
+}
+
+.bg-img .navbar-brand {
+    font-size: 24px;
+}
+
+/* =========== caption-home =========== */
+
+.caption-home h1 {
+    color: #FF305B;
+    font-size: 70px;
+}
+
+.caption-home p {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.bg-color{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+/* ====================== section About ====================== */
+
+.about-img {
+    border-radius: 15px;
+    border: 8px solid #555;
+}
+
+.about-img .container-photo {
+    position: relative;
+    transform: translateX(24px) translateY(24px);
+    overflow: hidden;
+}
+
+.overlay-photo {
+    height: 100%;
+    background-color: rgba(85, 85, 85, .8);
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 100%;
+    transition: all .7s ease-in-out;
+    overflow: hidden;
+}
+
+.container-photo:hover .overlay-photo {
+    top: 0;
+    overflow: hidden;
+}
+
+/* =========== about-cap =========== */
+.text-about {
+    width: 75%;
+}
+
+.about-cap h3, .about-cap h3 span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.overlay-photo i, .about-cap a {
+    transition: all .3s ease-in-out;
+}
+
+.about-cap h3 span, .overlay-photo a:hover i {
+    color: #FF305B !important;
+}
+
+.about-cap p {
+    border-bottom: 1px dashed #999;
+    padding-bottom: 25px;
+}
+
+.about-cap li {
+    padding-top: 15px;
+}
+
+.about-cap li span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.about-cap .btn {
+    background-color: #FF305B;
+    color: #fff;
+}
+
+.about-cap a:hover {
+    background-color: orangered;
+}
+
+/* ====================== Our Services ====================== */
+#Services h3::before,#Services h3::after ,#Blog h3::before,#Blog h3::after  {
+    content: "";
+    left: 0;
+    margin: -17px auto;
+    position: absolute;
+    right: 0;
+}
+#Services h3 ,#Portfolio h3 , #Feedback h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    position: relative;
+    
+}
+
+.item-service i {
+    color: #FF305B;
+}
+
+.item-service:hover {
+    background-color: #fff;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 5.6px 5.3px rgba(0, 0, 0, 0.048), 0 11.2px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
+
+.item-service:hover i {
+    transform: scale(1.2, 1.2);
+}
+
+/* ====================== Our Portfolio ====================== */
+
+#Portfolio .nav .active {
+    color: #FF305B !important;
+    background-color: transparent !important;
+}
+
+#Portfolio .nav a {
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 1px;
+    padding: 20px 12px;
+    text-transform: uppercase;
+}
+
+
+#Portfolio .nav a:hover  ,.item-members i{
+    color: #FF305B !important;
+}
+
+.larerDark{
+  background-color: rgba(51, 51, 51,.5);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.item-img-por:hover .larerDark{
+ opacity: 1;
+}
+
+/* ====================== Client's Feedback ====================== */
+
+.carousel-indicators button{
+    border-radius: 10px !important ;
+    width: 25px !important;
+    background-color: #ff305b !important;
+}
+
+.carousel-indicators .active{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #ff305b;
+}
+
+.Feedback-item{
+    overflow: hidden;
+    
+}
+
+.rotate-layer{
+    background-color: #FF305B;
+    height: 250px;
+    width: 250px;
+    transform: rotate(45deg);
+    left: -180px;
+    top: -175px;
+}
+
+.Feedback-img img{
+    position: relative;
+    z-index: 111 !important;
+}
+
+/* ====================== Our Blog ====================== */
+
+#Blog .row{
+    margin: 0px 10px ;
+}
+#Portfolio h3::before,#Portfolio h3::after ,#Feedback h3::before,#Feedback h3::after ,#Contact h3::before,#Contact h3::after {
+    content: "";
+    left: 0;
+    margin: -20px auto;
+    position: absolute;
+    right: 0;
+}
+h3::after {
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+h3::before{
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px ;
+    width: 70px;
+}
+
+.Blog-item h4 a ,.Blog-item .card-body a {
+    transition: all .2s ease-in;
+}
+
+.Blog-item h4 a:hover ,.Blog-item .card-body a:hover {
+    color: #FF305B !important;
+}
+
+#nav-branding ,#nav-web-design ,#nav-grphic{
+    display: none;
+}
+
+.mune .nav-item a{
+    color: black;
+}
+
+
+
+/* ====================== Contact ====================== */
+
+#Contact .container a{
+    background-color: #FF305B;
+    transition: all .3s ease-in;
+}
+
+#Contact .container a:hover{
+    background-color:orangered ;
+}
+
+/* ====================== footer ====================== */
+
+.footer-icon{
+    width: 22%;
+}
+
+#footer li a{
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+#footer li:hover a{
+    color: #FF305B;
+}
